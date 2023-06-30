@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=BIZ+UDGothic&family=BIZ+UDPGothic&family=Fira+Sans&family=Inter&family=Londrina+Outline&family=Pompiere&family=Rampart+One&family=Tilt+Warp&family=Tourney:wght@200&display=swap');
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+*::-webkit-scrollbar {
+    width: .75em;
+}
+   
+*::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px #452575;
+}
+   
+*::-webkit-scrollbar-thumb {
+    background-color: #452575;
+    border: 2px solid #E339B9;
+    
+}
+body {
+    min-height: 100%;
+    background-image: url('../images/gamer-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: 'BIZ UDPGothic', sans-serif;
+    /*overflow: hidden;*/
+}
+#body-registration, #process {
+    min-height: 100%;
+    background-image: url('../images/register-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    /*overflow: hidden;*/
+
+}
+#body-list-users {
+    background-image: url('../images/profile-background.jpg');
+}
+h1 {
+    padding: 10px;
+    /*margin: 0 0 40px 0;*/
+    width: 100%;
+    font-size: 28px;
+    /*text-shadow: 1px 1px 2px #E339B9;*/
+    text-shadow: 1px 1px 2px #E339B9, 0 0 .5em #452575, 0 0 0.1em #452575;
+}
+.littleh1 {
+    font-size: 16px;
+    margin-left: 3px;
+}
+.header {
+    height: 75px;
+    border: 2px solid black;
+    box-shadow: 0 0 45px 2px #E339B9;
+    background: #F7F6F4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+.nav {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.nav a {
+    text-align: center;
+    margin: 20px;
+    width: 80px;
+    height: auto;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    border: 2px solid #452575;
+    border-radius: 20px;
+    font-size: smaller;
+}
+.nav a:visited {
+    color: black;
+}
+.nav a:active {
+    color: black;
+}
+h2 {
+    background: #F7F6F4;
+    padding: 10px;
+    margin: 20px auto;
+    width: fit-content;
+    border: 2px solid black;
+    box-shadow: 0 0 45px 2px #E339B9;
+    border-radius: 20px;
+}
+.main-registration {
+    text-align: center;
+}
+#login-form {
+    background: #F7F6F4;
+    padding: 40px 40px 20px 40px;
+    margin: 75px 200px;
+    width: fit-content;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 0 0 45px 2px #E339B9;
+}
+#registration-form {
+    background: #F7F6F4;
+    padding: 5px 20px 20px 20px;
+    text-align: center;
+    width: fit-content;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 0 0 45px 2px #C3F5F6;
+    margin: 20px auto;
+}
+section {
+    margin-bottom: 10px;
+}
+input[type=text], input[type=number], input[type=char] {
+    padding: 5px;
+    margin: 10px 0;
+    box-shadow: 0 0 5px 1px #C3F5F6;
+    border-radius: 10px;
+}
+input[type=submit] {
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 5px solid #452575;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #F7F6F4;
+    position: relative;  
+    margin: 12px auto;
+    text-align: center;
+}
+input[type=file] {
+    border: 3px solid #452575;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #F7F6F4;
+    position: relative;  
+    margin: 12px auto;
+    text-align: right;
+}
+input::file-selector-button {
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 3px solid #452575;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #F7F6F4;
+    position: relative;  
+    text-align: center;
+    font-size: smaller;
+    margin: 5px;
+}
+.login {
+    background: #F7F6F4;
+    padding: 7px 10px;
+    margin: 20px auto;
+    width: fit-content;
+    border: 2px solid black;
+    box-shadow: 0 0 45px 2px #E339B9;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+a.login, a.logout {
+    text-decoration: none;
+    font-weight: bold;
+}
+a:active.login, a:active.logout {
+    color: black;
+
+}
+a:visited.login, a:visited.logout {
+    color: black;
+}
+.profile-img {
+    width: 120px;
+    height: 140px;
+    margin: 5px auto;
+}
+.account-img {
+    width: 140px;
+    height: 160px;
+    margin: 5px auto;
+}
+.card {
+    background-color: #F7F6F4;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 0 0 45px 2px #E339B9;
+    padding: 15px;
+    margin: 10px;
+    width: 220px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-account {
+    background-color: #F7F6F4;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 0 0 45px 2px #E339B9;
+    padding: 15px;
+    margin: 10px;
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+} 
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+.info {
+    text-align: center;
+    border: 2px solid #452575;
+    padding: 5px;
+}
+.info p{
+    font-size: smaller;
+}
+.center {
+    text-align: center;
+}
+.sign-up {
+    margin-top: 40px;
+}
+.sign-up-button {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 3px 5px;
+}
+.sign-up-button a:active, .sign-up-button a:visited {
+    color: black;
+}
+.member-login {
+    font-size: 25px;
+    color: #452575;
+}
+.error {
+    margin: 50px auto;
+    color: red;
+}
+.uppercase {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.form-select {
+    font-family: 'BIZ UDPGothic', sans-serif;
+    border-radius: 20px;
+}
+a.logout {
+    float: right;
+    margin: 40px;
+    background-color: #F7F6F4;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 0 0 45px 2px #E339B9;
+    padding: 7px 10px;
+    width: fit-content;
+}
+.welcome-msg {
+    text-align: center;
+    background-color: #F7F6F4;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 0 0 45px 2px #E339B9;
+    padding: 15px;
+    margin: 10px;
+}
+footer {
+    margin: 20px auto;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+.registration-footer {
+    margin-top: 300px;
+}
+.footer-span {
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background: #F7F6F4;
+    border: 2px solid black;
+    box-shadow: 0 0 30px 2px #E339B9;
+    margin: 20px auto;
+}
